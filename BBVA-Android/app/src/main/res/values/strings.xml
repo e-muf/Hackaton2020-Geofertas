@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BBVA Ofertas</string>
+
+    <!-- Nombres de los tabs -->
+
+    <string name="tab_text_1">Inicio</string>
+    <string name="tab_text_2">Mapa</string>
+    <string name="tab_text_3">Extras</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

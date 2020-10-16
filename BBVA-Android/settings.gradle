@@ -1,0 +1,2 @@
+rootProject.name='BBVA Ofertas'
+include ':app'
