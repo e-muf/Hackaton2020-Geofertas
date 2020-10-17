@@ -13,6 +13,7 @@ class Principal: UIViewController {
     
     
     func configuracionInicial() {
+        navigationController?.navigationBar.barStyle = .black
         self.navigationItem.title = "Principal"
         
         

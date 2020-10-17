@@ -27,4 +27,4 @@ Las ofertas son personalizadas para los usuarios clientes que se dieron de alta 
   
 
 ### Modelo de datos
-![](scr1.jpeg)
+![](src1.jpg)

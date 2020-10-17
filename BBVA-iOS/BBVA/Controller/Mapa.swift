@@ -128,7 +128,7 @@ class Mapa: UIViewController,CLLocationManagerDelegate{
           }
           self.view = mapView
           
-          self.navigationItem.title = "Notificaciones"
+          self.navigationItem.title = "Localizaciones"
         
         
           
