@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5435AEA9253AD07E008FF64E /* InicioSesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435AEA8253AD07E008FF64E /* InicioSesion.swift */; };
+		543F86DC253B2F2600351B3C /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86DB253B2F2600351B3C /* HideKeyboard.swift */; };
 		54BC8DDA253A03AB00DD135B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BC8DD9253A03AB00DD135B /* Main.storyboard */; };
-		54BC8DDC253A045D00DD135B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDB253A045D00DD135B /* Home.swift */; };
+		54BC8DDC253A045D00DD135B /* Principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDB253A045D00DD135B /* Principal.swift */; };
 		54BC8DDE253A047A00DD135B /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDD253A047A00DD135B /* Mapa.swift */; };
-		54BC8DE0253A048800DD135B /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDF253A048800DD135B /* Extras.swift */; };
+		54BC8DE0253A048800DD135B /* Notificaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDF253A048800DD135B /* Notificaciones.swift */; };
 		54BC8DE2253A04B900DD135B /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DE1253A04B900DD135B /* Cliente.swift */; };
 		54BC8DE4253A055B00DD135B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BC8DE3253A055B00DD135B /* LaunchScreen.storyboard */; };
 		54EFD2F1252CD72E0050E54C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EFD2F0252CD72E0050E54C /* AppDelegate.swift */; };
 		54EFD2F3252CD72E0050E54C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EFD2F2252CD72E0050E54C /* SceneDelegate.swift */; };
 		54EFD2FB252CD72E0050E54C /* BBVA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54EFD2F9252CD72E0050E54C /* BBVA.xcdatamodeld */; };
 		54EFD2FD252CD7310050E54C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54EFD2FC252CD7310050E54C /* Assets.xcassets */; };
+		55D0B45F7C5125B8741DC912 /* Pods_BBVA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78823111ED5215650C7C44E /* Pods_BBVA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51CEB5306CE71C92E7BE4F79 /* Pods-BBVA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBVA.debug.xcconfig"; path = "Target Support Files/Pods-BBVA/Pods-BBVA.debug.xcconfig"; sourceTree = "<group>"; };
+		5435AEA8253AD07E008FF64E /* InicioSesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesion.swift; sourceTree = "<group>"; };
+		543F86DB253B2F2600351B3C /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 		54BC8DD9253A03AB00DD135B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		54BC8DDB253A045D00DD135B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		54BC8DDB253A045D00DD135B /* Principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Principal.swift; sourceTree = "<group>"; };
 		54BC8DDD253A047A00DD135B /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
-		54BC8DDF253A048800DD135B /* Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
+		54BC8DDF253A048800DD135B /* Notificaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificaciones.swift; sourceTree = "<group>"; };
 		54BC8DE1253A04B900DD135B /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		54BC8DE3253A055B00DD135B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54EFD2ED252CD72E0050E54C /* BBVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +38,8 @@
 		54EFD2FA252CD72E0050E54C /* BBVA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BBVA.xcdatamodel; sourceTree = "<group>"; };
 		54EFD2FC252CD7310050E54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54EFD301252CD7310050E54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B78823111ED5215650C7C44E /* Pods_BBVA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBVA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27E6FE304AEBB6E8A8EFFA5 /* Pods-BBVA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBVA.release.xcconfig"; path = "Target Support Files/Pods-BBVA/Pods-BBVA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +47,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D0B45F7C5125B8741DC912 /* Pods_BBVA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52EB46F9F937E236BC19B215 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51CEB5306CE71C92E7BE4F79 /* Pods-BBVA.debug.xcconfig */,
+				F27E6FE304AEBB6E8A8EFFA5 /* Pods-BBVA.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		54BC8DD2253A012000DD135B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +89,7 @@
 		54BC8DD5253A016A00DD135B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				543F86DB253B2F2600351B3C /* HideKeyboard.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -77,7 +97,6 @@
 		54BC8DD6253A017C00DD135B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				54EFD2FC252CD7310050E54C /* Assets.xcassets */,
 				54BC8DD9253A03AB00DD135B /* Main.storyboard */,
 				54BC8DE3253A055B00DD135B /* LaunchScreen.storyboard */,
 			);
@@ -95,9 +114,10 @@
 		54BC8DD8253A019100DD135B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				54BC8DDB253A045D00DD135B /* Home.swift */,
+				54BC8DDB253A045D00DD135B /* Principal.swift */,
 				54BC8DDD253A047A00DD135B /* Mapa.swift */,
-				54BC8DDF253A048800DD135B /* Extras.swift */,
+				54BC8DDF253A048800DD135B /* Notificaciones.swift */,
+				5435AEA8253AD07E008FF64E /* InicioSesion.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,6 +127,8 @@
 			children = (
 				54EFD2EF252CD72E0050E54C /* BBVA */,
 				54EFD2EE252CD72E0050E54C /* Products */,
+				52EB46F9F937E236BC19B215 /* Pods */,
+				72D55948B818D506D3DB911F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,10 +151,19 @@
 				54BC8DD6253A017C00DD135B /* Views */,
 				54BC8DD8253A019100DD135B /* Controller */,
 				54EFD2F0252CD72E0050E54C /* AppDelegate.swift */,
+				54EFD2FC252CD7310050E54C /* Assets.xcassets */,
 				54EFD2F2252CD72E0050E54C /* SceneDelegate.swift */,
 				54EFD301252CD7310050E54C /* Info.plist */,
 			);
 			path = BBVA;
+			sourceTree = "<group>";
+		};
+		72D55948B818D506D3DB911F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B78823111ED5215650C7C44E /* Pods_BBVA.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54EFD304252CD7310050E54C /* Build configuration list for PBXNativeTarget "BBVA" */;
 			buildPhases = (
+				23E9963E12F42D2E9C140AC8 /* [CP] Check Pods Manifest.lock */,
 				54EFD2E9252CD72E0050E54C /* Sources */,
 				54EFD2EA252CD72E0050E54C /* Frameworks */,
 				54EFD2EB252CD72E0050E54C /* Resources */,
+				32FDBA41C7346F84BB2834FE /* [CP] Embed Pods Frameworks */,
+				C5914350ED84AD74CBA12F14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,17 +235,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23E9963E12F42D2E9C140AC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BBVA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32FDBA41C7346F84BB2834FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BBVA/Pods-BBVA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BBVA/Pods-BBVA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BBVA/Pods-BBVA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5914350ED84AD74CBA12F14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BBVA/Pods-BBVA-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BBVA/Pods-BBVA-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BBVA/Pods-BBVA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54EFD2E9252CD72E0050E54C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BC8DDC253A045D00DD135B /* Home.swift in Sources */,
+				54BC8DDC253A045D00DD135B /* Principal.swift in Sources */,
+				5435AEA9253AD07E008FF64E /* InicioSesion.swift in Sources */,
 				54BC8DE2253A04B900DD135B /* Cliente.swift in Sources */,
 				54EFD2FB252CD72E0050E54C /* BBVA.xcdatamodeld in Sources */,
-				54BC8DE0253A048800DD135B /* Extras.swift in Sources */,
+				54BC8DE0253A048800DD135B /* Notificaciones.swift in Sources */,
 				54BC8DDE253A047A00DD135B /* Mapa.swift in Sources */,
 				54EFD2F1252CD72E0050E54C /* AppDelegate.swift in Sources */,
+				543F86DC253B2F2600351B3C /* HideKeyboard.swift in Sources */,
 				54EFD2F3252CD72E0050E54C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +430,7 @@
 		};
 		54EFD305252CD7310050E54C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CEB5306CE71C92E7BE4F79 /* Pods-BBVA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -353,6 +449,7 @@
 		};
 		54EFD306252CD7310050E54C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27E6FE304AEBB6E8A8EFFA5 /* Pods-BBVA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
