@@ -10,5 +10,9 @@ import Foundation
 
 
 class Cliente{
-    
+    static let clienteApp = Cliente()
+    public init() {
+        
+    }
 }
+

@@ -4,23 +4,50 @@
 //
 //  Created by Samuel Arturo Garrido Sánchez on 2020-10-06.
 //  Copyright © 2020 SamArtGS. All rights reserved.
-//
 
 import UIKit
 import CoreData
 import GoogleMaps
 import UserNotifications
+import GooglePlaces
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate{
+    
+    /*
+     
+     En un futuro que tengamos cuenta de desarrollo, tener push notifications para apps estando inactivas
+     */
+    func registerForPushNotifications() {
+            UNUserNotificationCenter.current()
+                .requestAuthorization(options: [.alert, .sound, .badge]) {(granted, error) in
+                    print("Permission granted: \(granted)")
+            }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        registerForPushNotifications()
+        
+        
+        UNUserNotificationCenter.current().requestAuthorization(options:
+        [.badge,.alert,.sound])
+          {
+              (sucess,error) in
+              if error != nil {
+                  print("Error Found, \(error?.localizedDescription ?? "")")
+
+              } else {
+                  print("Authorized by the user")
+              }
+          }
+
+          UNUserNotificationCenter.current().delegate = self
         //Diseño color TabBar y agregar elementos
         
         GMSServices.provideAPIKey("AIzaSyBn4Uga7u3Ae37I8Ll9u3sVbEsnjZYKtQQ")
+        GMSPlacesClient.provideAPIKey("AIzaSyBn4Uga7u3Ae37I8Ll9u3sVbEsnjZYKtQQ")
         //Color de la barra
         UITabBar.appearance().barTintColor = UIColor(red: 9/255.0, green: 40/255.0, blue: 75/255.0, alpha: 1.0)
         
@@ -37,6 +64,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().alpha = 1.0
     
         
+        
+
         
         return true
     }
@@ -101,6 +130,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    
+    
     
 }
 

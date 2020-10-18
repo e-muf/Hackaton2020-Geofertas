@@ -3,12 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5435AEA9253AD07E008FF64E /* InicioSesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435AEA8253AD07E008FF64E /* InicioSesion.swift */; };
 		543F86DC253B2F2600351B3C /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86DB253B2F2600351B3C /* HideKeyboard.swift */; };
+		543F86DE253B7E0F00351B3C /* CeldaNotificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86DD253B7E0F00351B3C /* CeldaNotificacion.swift */; };
+		543F86E0253B947700351B3C /* Oferta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86DF253B947700351B3C /* Oferta.swift */; };
+		543F86E4253BB5BC00351B3C /* CeldaOferta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86E3253BB5BC00351B3C /* CeldaOferta.swift */; };
+		543F86E6253BD64100351B3C /* HalfModalPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86E5253BD64100351B3C /* HalfModalPresentation.swift */; };
+		543F86E8253BD69700351B3C /* HalfModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86E7253BD69700351B3C /* HalfModalTransitionDelegate.swift */; };
+		543F86EA253BD6CB00351B3C /* HalfModalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86E9253BD6CB00351B3C /* HalfModalInteractiveTransition.swift */; };
+		543F86EC253BD72E00351B3C /* HalfModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86EB253BD72E00351B3C /* HalfModalTransitionAnimator.swift */; };
+		543F86EE253BD7D000351B3C /* Configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86ED253BD7D000351B3C /* Configuracion.swift */; };
+		543F86F0253BD88B00351B3C /* AppNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86EF253BD88B00351B3C /* AppNavController.swift */; };
+		543F86F2253C733300351B3C /* GoogleMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86F1253C733300351B3C /* GoogleMaps.swift */; };
 		54BC8DDA253A03AB00DD135B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BC8DD9253A03AB00DD135B /* Main.storyboard */; };
 		54BC8DDC253A045D00DD135B /* Principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDB253A045D00DD135B /* Principal.swift */; };
 		54BC8DDE253A047A00DD135B /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDD253A047A00DD135B /* Mapa.swift */; };
@@ -26,13 +36,23 @@
 		51CEB5306CE71C92E7BE4F79 /* Pods-BBVA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBVA.debug.xcconfig"; path = "Target Support Files/Pods-BBVA/Pods-BBVA.debug.xcconfig"; sourceTree = "<group>"; };
 		5435AEA8253AD07E008FF64E /* InicioSesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesion.swift; sourceTree = "<group>"; };
 		543F86DB253B2F2600351B3C /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		543F86DD253B7E0F00351B3C /* CeldaNotificacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaNotificacion.swift; sourceTree = "<group>"; };
+		543F86DF253B947700351B3C /* Oferta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oferta.swift; sourceTree = "<group>"; };
+		543F86E3253BB5BC00351B3C /* CeldaOferta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaOferta.swift; sourceTree = "<group>"; };
+		543F86E5253BD64100351B3C /* HalfModalPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalPresentation.swift; sourceTree = "<group>"; };
+		543F86E7253BD69700351B3C /* HalfModalTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionDelegate.swift; sourceTree = "<group>"; };
+		543F86E9253BD6CB00351B3C /* HalfModalInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalInteractiveTransition.swift; sourceTree = "<group>"; };
+		543F86EB253BD72E00351B3C /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
+		543F86ED253BD7D000351B3C /* Configuracion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracion.swift; sourceTree = "<group>"; };
+		543F86EF253BD88B00351B3C /* AppNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavController.swift; sourceTree = "<group>"; };
+		543F86F1253C733300351B3C /* GoogleMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMaps.swift; sourceTree = "<group>"; };
 		54BC8DD9253A03AB00DD135B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		54BC8DDB253A045D00DD135B /* Principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Principal.swift; sourceTree = "<group>"; };
 		54BC8DDD253A047A00DD135B /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
 		54BC8DDF253A048800DD135B /* Notificaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificaciones.swift; sourceTree = "<group>"; };
 		54BC8DE1253A04B900DD135B /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		54BC8DE3253A055B00DD135B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		54EFD2ED252CD72E0050E54C /* BBVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54EFD2ED252CD72E0050E54C /* Geofertas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geofertas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EFD2F0252CD72E0050E54C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54EFD2F2252CD72E0050E54C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		54EFD2FA252CD72E0050E54C /* BBVA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BBVA.xcdatamodel; sourceTree = "<group>"; };
@@ -60,13 +80,16 @@
 				51CEB5306CE71C92E7BE4F79 /* Pods-BBVA.debug.xcconfig */,
 				F27E6FE304AEBB6E8A8EFFA5 /* Pods-BBVA.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		54BC8DD2253A012000DD135B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				543F86E5253BD64100351B3C /* HalfModalPresentation.swift */,
+				543F86E7253BD69700351B3C /* HalfModalTransitionDelegate.swift */,
+				543F86E9253BD6CB00351B3C /* HalfModalInteractiveTransition.swift */,
+				543F86EB253BD72E00351B3C /* HalfModalTransitionAnimator.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -82,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				54BC8DE1253A04B900DD135B /* Cliente.swift */,
+				543F86DD253B7E0F00351B3C /* CeldaNotificacion.swift */,
+				543F86DF253B947700351B3C /* Oferta.swift */,
+				543F86E3253BB5BC00351B3C /* CeldaOferta.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				543F86DB253B2F2600351B3C /* HideKeyboard.swift */,
+				543F86F1253C733300351B3C /* GoogleMaps.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -118,6 +145,8 @@
 				54BC8DDD253A047A00DD135B /* Mapa.swift */,
 				54BC8DDF253A048800DD135B /* Notificaciones.swift */,
 				5435AEA8253AD07E008FF64E /* InicioSesion.swift */,
+				543F86ED253BD7D000351B3C /* Configuracion.swift */,
+				543F86EF253BD88B00351B3C /* AppNavController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,7 +164,7 @@
 		54EFD2EE252CD72E0050E54C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54EFD2ED252CD72E0050E54C /* BBVA.app */,
+				54EFD2ED252CD72E0050E54C /* Geofertas.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,7 +215,7 @@
 			);
 			name = BBVA;
 			productName = BBVA;
-			productReference = 54EFD2ED252CD72E0050E54C /* BBVA.app */;
+			productReference = 54EFD2ED252CD72E0050E54C /* Geofertas.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -304,10 +333,20 @@
 				54BC8DE2253A04B900DD135B /* Cliente.swift in Sources */,
 				54EFD2FB252CD72E0050E54C /* BBVA.xcdatamodeld in Sources */,
 				54BC8DE0253A048800DD135B /* Notificaciones.swift in Sources */,
+				543F86DE253B7E0F00351B3C /* CeldaNotificacion.swift in Sources */,
 				54BC8DDE253A047A00DD135B /* Mapa.swift in Sources */,
+				543F86E4253BB5BC00351B3C /* CeldaOferta.swift in Sources */,
+				543F86EE253BD7D000351B3C /* Configuracion.swift in Sources */,
+				543F86E8253BD69700351B3C /* HalfModalTransitionDelegate.swift in Sources */,
+				543F86E0253B947700351B3C /* Oferta.swift in Sources */,
+				543F86F2253C733300351B3C /* GoogleMaps.swift in Sources */,
 				54EFD2F1252CD72E0050E54C /* AppDelegate.swift in Sources */,
+				543F86EA253BD6CB00351B3C /* HalfModalInteractiveTransition.swift in Sources */,
+				543F86E6253BD64100351B3C /* HalfModalPresentation.swift in Sources */,
 				543F86DC253B2F2600351B3C /* HideKeyboard.swift in Sources */,
+				543F86EC253BD72E00351B3C /* HalfModalTransitionAnimator.swift in Sources */,
 				54EFD2F3252CD72E0050E54C /* SceneDelegate.swift in Sources */,
+				543F86F0253BD88B00351B3C /* AppNavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SamArtGS.BBVA;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Geofertas;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,7 +499,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SamArtGS.BBVA;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Geofertas;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
