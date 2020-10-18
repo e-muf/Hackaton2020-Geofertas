@@ -6,30 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <EditText
-        android:id="@+id/edtSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:hint="Buscar"
-        android:padding="10dp"
-        android:importantForAutofill="no"
-        android:drawableRight="@android:drawable/ic_menu_search"
-        android:inputType="text" />
-    <Spinner
-        android:padding="10dp"
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:outlineAmbientShadowColor="@color/colorPrimaryDark"/>
-        <!--android:entries="@array/Region"-->
-
 
     <fragment
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:id="@+id/mapita"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 </LinearLayout>
