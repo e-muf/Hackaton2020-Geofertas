@@ -32,12 +32,17 @@
                         <viewLayoutGuide key="safeArea" id="MMX-p1-wfS"/>
                     </view>
                     <navigationItem key="navigationItem" id="STF-3s-VIQ">
-                        <barButtonItem key="rightBarButtonItem" image="ellipsis" catalog="system" style="plain" id="J7d-P3-L9k">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="f5s-ed-WLQ" kind="presentation" id="Ubw-Zi-fMY"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="ellipsis" catalog="system" style="plain" id="J7d-P3-L9k">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="f5s-ed-WLQ" kind="presentation" id="Ubw-Zi-fMY"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="magnifyingglass" catalog="system" id="okz-Q5-bL8">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="fVE-d1-eCV" id="4U3-Kq-Izf"/>
@@ -46,6 +51,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edV-Ur-Ybz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1857.9710144927537" y="-346.20535714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Cg-Cl-xp4">
+            <objects>
+                <viewController id="2GY-xu-sZz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTD-nh-kXz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pFG-cT-Hxp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fs2-fN-DKz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uee-fz-51S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2761" y="-346"/>
         </scene>
         <!--Principal-->
         <scene sceneID="vJO-fz-zQE">
@@ -134,6 +155,7 @@
                                             <outlet property="nombreOferta" destination="SXb-Ea-IKe" id="D2S-7n-UZc"/>
                                             <outlet property="tienda_Oferta" destination="Zry-Qt-Z0k" id="ONL-fc-WNq"/>
                                             <outlet property="vigencia_Oferta" destination="EfM-gV-YdT" id="tCh-oj-ZPM"/>
+                                            <segue destination="2GY-xu-sZz" kind="show" id="Eas-VT-p1v"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -149,12 +171,22 @@
                         <viewLayoutGuide key="safeArea" id="uWL-Eh-poR"/>
                     </view>
                     <navigationItem key="navigationItem" id="kBf-E5-sy8">
-                        <barButtonItem key="rightBarButtonItem" image="ellipsis" catalog="system" id="OTM-Et-e7h">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="leftBarButtonItem" title="Play" id="0Va-Sv-wF8">
                             <connections>
-                                <segue destination="f5s-ed-WLQ" kind="presentation" id="Xle-d3-xCm"/>
+                                <action selector="StartButton:" destination="Cd6-av-Y7O" id="2w7-D5-w2Z"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="ellipsis" catalog="system" id="OTM-Et-e7h">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="f5s-ed-WLQ" kind="presentation" id="Xle-d3-xCm"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="magnifyingglass" catalog="system" id="lzb-3P-hqh">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="colleccionOfertas" destination="n1W-4m-tZh" id="fuj-hz-rzI"/>
@@ -287,6 +319,7 @@
                                             <outlet property="label_nombre_oferta" destination="8hl-aa-v6j" id="Nyf-7x-Keg"/>
                                             <outlet property="label_tienda" destination="nfg-6v-goZ" id="Z8i-IF-adS"/>
                                             <outlet property="label_vigencia" destination="JQn-Wp-nnk" id="fK3-So-vqg"/>
+                                            <segue destination="2GY-xu-sZz" kind="show" id="Ggf-Vt-1xp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -302,12 +335,17 @@
                         <viewLayoutGuide key="safeArea" id="U8p-Qt-Fdb"/>
                     </view>
                     <navigationItem key="navigationItem" id="t5P-Oe-CoU">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ellipsis" catalog="system" id="mlK-Wx-Ccd">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="f5s-ed-WLQ" kind="presentation" id="6W0-t3-YHX"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="ellipsis" catalog="system" id="mlK-Wx-Ccd">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="f5s-ed-WLQ" kind="presentation" id="6W0-t3-YHX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="magnifyingglass" catalog="system" id="Zff-eH-Vn0">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tablaNotificaciones" destination="SZY-6O-B2O" id="jsi-cy-3TA"/>
@@ -555,6 +593,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.026965163649999999" green="0.1533427835" blue="0.2986698747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -572,11 +613,13 @@
         <image name="icons8-bell" width="36" height="36"/>
         <image name="icons8-home" width="36" height="36"/>
         <image name="icons8-marker" width="36" height="36"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="square.and.arrow.down.on.square" catalog="system" width="60" height="64"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6W0-t3-YHX"/>
+        <segue reference="Xle-d3-xCm"/>
         <segue reference="qPQ-c7-hTL"/>
+        <segue reference="Eas-VT-p1v"/>
     </inferredMetricsTieBreakers>
 </document>

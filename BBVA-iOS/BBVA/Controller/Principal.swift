@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import UserNotifications
 
-class Principal: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+class Principal: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UNUserNotificationCenterDelegate {
     
     @IBOutlet var colleccionOfertas: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
+    
+    
+
+    @IBAction func StartButton(_ sender: Any) {
+        setNotification()
+    }
+    
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -52,10 +62,11 @@ class Principal: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         navigationController?.navigationBar.barStyle = .black
         self.navigationItem.title = "Principal"
         
+
+    }
+
     
         
-        
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,14 +82,8 @@ class Principal: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     
 
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     Para la transición modal
+     */
     var halfModalTransitioningDelegate: HalfModalTransitioningDelegate?
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -89,5 +94,21 @@ class Principal: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         segue.destination.transitioningDelegate = self.halfModalTransitioningDelegate
     }
     
+    
+     /*Envío de notificaciones normales*/
+    func setNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "BBVA pone en tus manos el mejor auto"
+        content.subtitle = "Adquiere un crédito por $231,050.00 preaprobado para estrenar auto"
+        content.sound = UNNotificationSound.default
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
 
+        let request = UNNotificationRequest(identifier: "Identifier", content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { (error) in
+            print(error?.localizedDescription ?? "")
+        }
+
+    }
+    
 }

@@ -55,14 +55,18 @@ class Notificaciones: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     
 
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+        Para la transición modal
     */
+       var halfModalTransitioningDelegate: HalfModalTransitioningDelegate?
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           super.prepare(for: segue, sender: sender)
+           
+           self.halfModalTransitioningDelegate = HalfModalTransitioningDelegate(viewController: self, presentingViewController: segue.destination)
+           
+           segue.destination.modalPresentationStyle = .custom
+           segue.destination.transitioningDelegate = self.halfModalTransitioningDelegate
+       }
     
 }

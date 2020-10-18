@@ -11,12 +11,38 @@ import GoogleMaps
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate{
+    
+    /*
+     
+     En un futuro que tengamos cuenta de desarrollo, tener push notifications para apps estando inactivas
+     */
+    func registerForPushNotifications() {
+            UNUserNotificationCenter.current()
+                .requestAuthorization(options: [.alert, .sound, .badge]) {(granted, error) in
+                    print("Permission granted: \(granted)")
+            }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        registerForPushNotifications()
+        
+        
+        UNUserNotificationCenter.current().requestAuthorization(options:
+        [.badge,.alert,.sound])
+          {
+              (sucess,error) in
+              if error != nil {
+                  print("Error Found, \(error?.localizedDescription ?? "")")
+
+              } else {
+                  print("Authorized by the user")
+              }
+          }
+
+          UNUserNotificationCenter.current().delegate = self
         //Diseño color TabBar y agregar elementos
         
         GMSServices.provideAPIKey("AIzaSyBn4Uga7u3Ae37I8Ll9u3sVbEsnjZYKtQQ")
@@ -36,6 +62,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().alpha = 1.0
     
         
+        
+
         
         return true
     }
@@ -100,6 +128,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    
+    
     
 }
 

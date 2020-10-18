@@ -11,24 +11,20 @@ import UIKit
 class Configuracion: UIViewController,UITableViewDataSource,UITableViewDelegate, HalfModalPresentable{
     
     
+    let configuracion:[String] = ["Ir a la app BBVA","Sitio Web de BBVA","Configuración","Ofertas guardadas","Política de Privacidad","Compartir aplicación","Cerrar Sesión"]
+    
+    let imagenes:[String] = ["ir-bbva","sitio_web","config","bookmark","shield","share","exit"]
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        configuracion.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = UITableViewCell(style:UITableViewCell.CellStyle.default,reuseIdentifier:"celdaConfiguracionIdentifier")
+        let celda = UITableViewCell(style:UITableViewCell.CellStyle.default,reuseIdentifier:"celdaConfiguracionIdentifier")
+            celda.imageView!.image = UIImage(named: imagenes[indexPath.row] )
+            celda.textLabel?.text = configuracion[indexPath.row]
         
-        let boldFont = UIFont.systemFont(ofSize: 18, weight: .bold)
-        if #available(iOS 13.0, *) {
-            let config = UIImage.SymbolConfiguration(font: boldFont)
-            let image = UIImage(systemName: "speaker", withConfiguration: config)
-            cell.imageView!.image = image
-            cell.textLabel?.text = "Si funciona"
-        } else {
-            cell.textLabel?.text = "Configuracion"
-        }
-        cell.textLabel?.text = "configuracion"
-        return cell
+        return celda
     }
     
     
@@ -37,6 +33,7 @@ class Configuracion: UIViewController,UITableViewDataSource,UITableViewDelegate,
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Más opciones"
         tabla_config.delegate = self
         tabla_config.dataSource = self
 
@@ -50,14 +47,9 @@ class Configuracion: UIViewController,UITableViewDataSource,UITableViewDelegate,
         dismiss(animated: true, completion: nil)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
 
 }
