@@ -4,7 +4,6 @@
 //
 //  Created by Samuel Arturo Garrido Sánchez on 2020-10-06.
 //  Copyright © 2020 SamArtGS. All rights reserved.
-//
 
 import UIKit
 import CoreData
