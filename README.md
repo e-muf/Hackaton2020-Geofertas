@@ -25,7 +25,7 @@ Las ofertas son personalizadas para los usuarios clientes que se dieron de alta 
 
 ### Modelo relacional de BD
 
-![](BBVA-BD/scr1.jpeg)
+![](BBVA-BD/src1.jpg)
 
 ## Arquitectura AWS 🏛
 
