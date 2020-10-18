@@ -1,0 +1,10 @@
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (1, 'Ingreso mínimo mensual de $6,000.00', 'Tarjeta Azul');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (2, 'Ingreso mínimo mensual de $20,000.00', 'Tarjeta Oro BBVA');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (3, 'Ingreso mínimo mensual de $50,000', 'Tarjeta Platinum BBVA');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (4, 'Ingreso mínimo mensual de $6,000.00', 'Tarjeta Rayados BBVA');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (5, 'Ingreso mínimo mensual de $12,000.00', 'Tarjeta Afinidad UNAM BBVA');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (6, 'Ingreso mínimo mensual de $6,000.00', 'Tarjeta Educación BBVA');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (7, 'Ingreso mínimo mensual de $6,000.00', 'Tarjeta IPN BBVA');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (8, 'Ingreso mínimo mensual de $6,000.00', 'Mi primera Tarjeta Bancomer');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (9, 'Ingreso mínimo mensual de $5,000', 'Tarjeta Vive BBVA');
+insert into tipo_tarjeta_credito (tipo_tarjeta_id, descripcion, nombre) values (10, 'Este producto está disponible solo por invitación. ', 'Tarjeta Crea BBVA');

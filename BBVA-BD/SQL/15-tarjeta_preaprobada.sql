@@ -1,0 +1,4 @@
+insert into tarjeta_preaprobada (oferta_id, nombre_tarjeta, limite_credito, cat, anualidad) values (3, 'Tarjeta Oro BBVA', 789389.32, 35.11, 4386.9);
+insert into tarjeta_preaprobada (oferta_id, nombre_tarjeta, limite_credito, cat, anualidad) values (7, 'Tarjeta Azul', 131681.38, 20.75, 3289.18);
+insert into tarjeta_preaprobada (oferta_id, nombre_tarjeta, limite_credito, cat, anualidad) values (14, 'Tarjeta Afinidad UNAM BBVA', 571077.04, 112.6, 3186.32);
+insert into tarjeta_preaprobada (oferta_id, nombre_tarjeta, limite_credito, cat, anualidad) values (15, 'Tarjeta Vive BBVA', 815856.79, 33.04, 5221.05);
