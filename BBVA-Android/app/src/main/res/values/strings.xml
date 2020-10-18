@@ -7,6 +7,11 @@
     <string name="tab_text_2">Mapa</string>
     <string name="tab_text_3">Extras</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="User">Número de Teléfono</string>
+    <string name="Password">Contraseña</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="Acceder">Acceder sin ser cliente</string>
+    <string name="forgetPassword">¿Olvidaste tu contraseña?</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
