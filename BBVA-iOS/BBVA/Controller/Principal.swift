@@ -14,7 +14,7 @@ class Principal: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     @IBOutlet var colleccionOfertas: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return ofertantes.count
     }
     
     
@@ -23,19 +23,20 @@ class Principal: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         setNotification()
     }
     
-    
+    let ofertantes = ["BBVA Créditos","BBVA - Liverpool","Sears","Liverpool","Nissan"]
+    let textosOfertas = ["BBVA pone a tu disposición un crédito preaprobado para que estrenes auto","Con tarjeta Gold podrás acceder a mejores precios en Liverpool","Aprovecha las promociones de 40% de descuento pagando con tarjetas BBVA en Sears","En Liverpool amamos a los clientes de BBVA, les bonificamos 10% de su compra en puntos","Nissan Villahermosa: clientes BBVA con 0% comisión por apertura"]
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let celda = collectionView.dequeueReusableCell(withReuseIdentifier: "CeldaOferta", for: indexPath) as! CeldaOferta
         
-        celda.nombreOferta.text = "Tenemos las mejores ofertas disponibles por BBVA Puntos"
+        celda.nombreOferta.text = textosOfertas[indexPath.row]
        
-        celda.tienda_Oferta.text = "Liverpool"
-        celda.vigencia_Oferta.text = "Vigencia: 3 de Noviembre"
+        celda.tienda_Oferta.text = ofertantes[indexPath.row]
+        celda.vigencia_Oferta.text = "Vigencia: \(Int.random(in: 2..<30)) de Noviembre"
         
-        celda.imagen_Oferta.image = UIImage(named: "nasa-home")
+        celda.imagen_Oferta.image = UIImage(named: "ofertas\(indexPath.row)")
         
         
         //Chuleada

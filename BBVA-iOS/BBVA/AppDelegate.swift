@@ -9,6 +9,7 @@ import UIKit
 import CoreData
 import GoogleMaps
 import UserNotifications
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate{
@@ -46,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         //Diseño color TabBar y agregar elementos
         
         GMSServices.provideAPIKey("AIzaSyBn4Uga7u3Ae37I8Ll9u3sVbEsnjZYKtQQ")
+        GMSPlacesClient.provideAPIKey("AIzaSyBn4Uga7u3Ae37I8Ll9u3sVbEsnjZYKtQQ")
         //Color de la barra
         UITabBar.appearance().barTintColor = UIColor(red: 9/255.0, green: 40/255.0, blue: 75/255.0, alpha: 1.0)
         

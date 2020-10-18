@@ -12,7 +12,7 @@
         <!--Mapa-->
         <scene sceneID="feC-K9-bJA">
             <objects>
-                <viewController id="cQa-1P-Brg" customClass="Mapa" customModule="BBVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cQa-1P-Brg" customClass="Mapa" customModule="Geofertas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LSv-R3-Lkf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,26 +52,116 @@
             </objects>
             <point key="canvasLocation" x="1857.9710144927537" y="-346.20535714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Crédito Preaprobado-->
         <scene sceneID="9Cg-Cl-xp4">
             <objects>
                 <viewController id="2GY-xu-sZz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VTD-nh-kXz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ofertas0" translatesAutoresizingMaskIntoConstraints="NO" id="OiV-5P-HFe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="mJo-gF-byq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monto Preaprobado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5H-Jw-3mr">
+                                <rect key="frame" x="56" y="350" width="338" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$231,050.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNr-SL-hPn">
+                                <rect key="frame" x="56" y="390" width="338" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plazo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJV-or-Bt1">
+                                <rect key="frame" x="56" y="437" width="338" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHK-FW-Ja0">
+                                <rect key="frame" x="284" y="643" width="110" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.02520224683" blue="0.58151570429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="8HA-xD-WRc"/>
+                                    <constraint firstAttribute="height" constant="40" id="9TW-Yd-tgc"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="titleShadowOffset" width="6" height="6"/>
+                                <state key="normal" title="Contratar"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6h-j0-jGs">
+                                <rect key="frame" x="56" y="485" width="338" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-Ev-sWp">
+                                <rect key="frame" x="20" y="356" width="35" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Button" image="checkmark.seal.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvi-7e-63D">
+                                <rect key="frame" x="11" y="459" width="37" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" image="calendar" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY7-eC-YEC">
+                                <rect key="frame" x="56" y="549" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Términos y condiciones"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXd-Xy-xgj">
+                                <rect key="frame" x="56" y="587" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Conoce más ofertas"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crédito preaprobado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j56-0q-k3v">
+                                <rect key="frame" x="20" y="312" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BBVA te ayuda a que estrenes auto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH5-gP-WSV">
+                                <rect key="frame" x="20" y="238" width="374" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OiV-5P-HFe" firstAttribute="top" secondItem="pFG-cT-Hxp" secondAttribute="top" id="X5P-2m-aUy"/>
+                            <constraint firstItem="pFG-cT-Hxp" firstAttribute="trailing" secondItem="KHK-FW-Ja0" secondAttribute="trailing" constant="20" id="Y2M-EV-t5c"/>
+                            <constraint firstItem="OiV-5P-HFe" firstAttribute="leading" secondItem="pFG-cT-Hxp" secondAttribute="leading" id="dj9-nw-xia"/>
+                            <constraint firstItem="OiV-5P-HFe" firstAttribute="trailing" secondItem="pFG-cT-Hxp" secondAttribute="trailing" id="fuz-ZI-uFM"/>
+                            <constraint firstItem="pFG-cT-Hxp" firstAttribute="bottom" secondItem="KHK-FW-Ja0" secondAttribute="bottom" constant="20" id="t0o-Xx-bqD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pFG-cT-Hxp"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fs2-fN-DKz"/>
+                    <navigationItem key="navigationItem" title="Crédito Preaprobado" id="fs2-fN-DKz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uee-fz-51S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="-346"/>
+            <point key="canvasLocation" x="2760.8695652173915" y="-346.20535714285711"/>
         </scene>
         <!--Principal-->
         <scene sceneID="vJO-fz-zQE">
             <objects>
-                <viewController id="Cd6-av-Y7O" customClass="Principal" customModule="BBVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cd6-av-Y7O" customClass="Principal" customModule="Geofertas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g2r-XC-PuU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +176,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="12" maxX="0.0" maxY="12"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CeldaOferta" id="ePh-oD-vun" customClass="CeldaOferta" customModule="BBVA" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CeldaOferta" id="ePh-oD-vun" customClass="CeldaOferta" customModule="Geofertas" customModuleProvider="target">
                                         <rect key="frame" x="18.5" y="12" width="377" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KkK-PY-Uiz">
@@ -171,7 +261,7 @@
                         <viewLayoutGuide key="safeArea" id="uWL-Eh-poR"/>
                     </view>
                     <navigationItem key="navigationItem" id="kBf-E5-sy8">
-                        <barButtonItem key="leftBarButtonItem" title="Play" id="0Va-Sv-wF8">
+                        <barButtonItem key="leftBarButtonItem" title="." id="0Va-Sv-wF8">
                             <connections>
                                 <action selector="StartButton:" destination="Cd6-av-Y7O" id="2w7-D5-w2Z"/>
                             </connections>
@@ -247,7 +337,7 @@
         <!--Notificaciones-->
         <scene sceneID="FKc-sk-cCL">
             <objects>
-                <viewController id="2Cv-h1-V7F" customClass="Notificaciones" customModule="BBVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Cv-h1-V7F" customClass="Notificaciones" customModule="Geofertas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HgG-66-3fc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,7 +346,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CeldaOfertas" rowHeight="145" id="Oq4-ql-zXZ" customClass="CeldaNotificacion" customModule="BBVA" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CeldaOfertas" rowHeight="145" id="Oq4-ql-zXZ" customClass="CeldaNotificacion" customModule="Geofertas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oq4-ql-zXZ" id="usw-JI-mic">
@@ -358,7 +448,7 @@
         <!--Inicio Sesion-->
         <scene sceneID="ND8-d8-QIn">
             <objects>
-                <viewController id="yzh-zp-LNg" customClass="InicioSesion" customModule="BBVA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yzh-zp-LNg" customClass="InicioSesion" customModule="Geofertas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t24-hd-rMs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -587,7 +677,7 @@
         <!--App Nav Controller-->
         <scene sceneID="ABG-sk-6RP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f5s-ed-WLQ" customClass="AppNavController" customModule="HalfModalPresentationController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f5s-ed-WLQ" customClass="AppNavController" customModule="Geofertas" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Osu-gd-5kz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -608,12 +698,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="checkmark.seal.fill" catalog="system" width="64" height="60"/>
         <image name="doc.fill" catalog="system" width="56" height="64"/>
         <image name="ellipsis" catalog="system" width="64" height="18"/>
         <image name="icons8-bell" width="36" height="36"/>
         <image name="icons8-home" width="36" height="36"/>
         <image name="icons8-marker" width="36" height="36"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="ofertas0" width="960" height="677"/>
         <image name="square.and.arrow.down.on.square" catalog="system" width="60" height="64"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>

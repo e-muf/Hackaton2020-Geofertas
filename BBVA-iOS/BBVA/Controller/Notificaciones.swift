@@ -25,16 +25,22 @@ class Notificaciones: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet var tablaNotificaciones: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return tiendas.count
     }
+    
+    let tiendas = ["BBVA Seguros","Liverpool","Nissan","Inmobiliaria Villahermosa","BBVA Créditos"]
+    
+    let textos = ["BBVA pone en tus manos el mejor auto. Crédito preaprobado por $231,050.0","En liverpool te consentimos, pasa a nuestra tienda por descuentos","Nissan y BBVA se alian para ofecerte 0% comisión por apertura","Grupo Carso da descuentos del 10% de clientes BBVA","Te espera estas fechas un crédito preaprobado"]
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
         //TODO: traer la infor de la respuesta del back
         let celda = tableView.dequeueReusableCell(withIdentifier: "CeldaOfertas") as! CeldaNotificacion
-        celda.label_tienda.text = "Liverpool"
-        celda.label_nombre_oferta.text = "Tus puntos BBVA te regalan 2 pantallas planas en Liverpool"
-        celda.label_vigencia.text = "23 de Noviembre"
+        celda.label_tienda.text = tiendas[indexPath.row]
+        celda.label_nombre_oferta.text = textos[indexPath.row]
+    
+        celda.label_vigencia.text = "Vigencia: \(Int.random(in: 1...30)) de Noviembre"
         
         return celda
     }

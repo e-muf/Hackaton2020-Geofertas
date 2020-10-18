@@ -18,6 +18,7 @@
 		543F86EC253BD72E00351B3C /* HalfModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86EB253BD72E00351B3C /* HalfModalTransitionAnimator.swift */; };
 		543F86EE253BD7D000351B3C /* Configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86ED253BD7D000351B3C /* Configuracion.swift */; };
 		543F86F0253BD88B00351B3C /* AppNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86EF253BD88B00351B3C /* AppNavController.swift */; };
+		543F86F2253C733300351B3C /* GoogleMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F86F1253C733300351B3C /* GoogleMaps.swift */; };
 		54BC8DDA253A03AB00DD135B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BC8DD9253A03AB00DD135B /* Main.storyboard */; };
 		54BC8DDC253A045D00DD135B /* Principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDB253A045D00DD135B /* Principal.swift */; };
 		54BC8DDE253A047A00DD135B /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC8DDD253A047A00DD135B /* Mapa.swift */; };
@@ -44,6 +45,7 @@
 		543F86EB253BD72E00351B3C /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
 		543F86ED253BD7D000351B3C /* Configuracion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracion.swift; sourceTree = "<group>"; };
 		543F86EF253BD88B00351B3C /* AppNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavController.swift; sourceTree = "<group>"; };
+		543F86F1253C733300351B3C /* GoogleMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMaps.swift; sourceTree = "<group>"; };
 		54BC8DD9253A03AB00DD135B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		54BC8DDB253A045D00DD135B /* Principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Principal.swift; sourceTree = "<group>"; };
 		54BC8DDD253A047A00DD135B /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				543F86DB253B2F2600351B3C /* HideKeyboard.swift */,
+				543F86F1253C733300351B3C /* GoogleMaps.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				543F86EE253BD7D000351B3C /* Configuracion.swift in Sources */,
 				543F86E8253BD69700351B3C /* HalfModalTransitionDelegate.swift in Sources */,
 				543F86E0253B947700351B3C /* Oferta.swift in Sources */,
+				543F86F2253C733300351B3C /* GoogleMaps.swift in Sources */,
 				54EFD2F1252CD72E0050E54C /* AppDelegate.swift in Sources */,
 				543F86EA253BD6CB00351B3C /* HalfModalInteractiveTransition.swift in Sources */,
 				543F86E6253BD64100351B3C /* HalfModalPresentation.swift in Sources */,
