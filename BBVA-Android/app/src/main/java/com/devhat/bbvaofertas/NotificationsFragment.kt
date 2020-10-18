@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.devhat.bbvaofertas.notificaciones.Notificaciones
@@ -35,6 +36,7 @@ class NotificationsFragment : Fragment() {
             notificaciones.add(Notificaciones("Liverpool", "50% de descuento el la venta nocturna", " Vigencia: num de mayo"))
         //notificaciones.add(Notificaciones("Palacio", "50% de descuento el la venta nocturna", " Vigencia: 6 de mayo"))
         recyclerView.adapter = NotificationsAdapter(notificaciones)
+        recyclerView.addItemDecoration(DividerItemDecoration(rootView.context, LinearLayoutManager.VERTICAL))
         return rootView;
     }
 

@@ -1,12 +1,13 @@
 package com.devhat.bbvaofertas.notificaciones
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.devhat.bbvaofertas.R
+import com.devhat.bbvaofertas.DetailOferta
 
 class NotificationsAdapter(var list: ArrayList<Notificaciones>): RecyclerView.Adapter<NotificationsAdapter.ViewHolder>(){
 
@@ -21,7 +22,9 @@ class NotificationsAdapter(var list: ArrayList<Notificaciones>): RecyclerView.Ad
             text_vigencia.text = data.vigencia
 
             itemView.setOnClickListener{
-                Toast.makeText(itemView.context, "Promocion Aplicada", Toast.LENGTH_LONG ).show()
+                val context=itemView.context
+                val intent = Intent( context, DetailOferta::class.java)
+                context.startActivity(intent)
             }
         }
     }

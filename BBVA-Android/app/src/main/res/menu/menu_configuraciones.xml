@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/search"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+        android:title=""
+        android:icon="@drawable/more_vert"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/ir_bbva"
+                android:title="Ir a BBVA"
+                android:icon="@drawable/compare_arrows">
+            </item>
+            <item android:id="@+id/sitio_bbva"
+                android:title="Sitio web BBVA"
+                android:icon="@drawable/sitio_web">
+            </item>
+            <item android:id="@+id/configuracion"
+                android:title="Configuracion"
+                android:icon="@drawable/settings">
+            </item>
+            <item android:id="@+id/ofertas_guardadas"
+                android:title="Ofertas Guardadas"
+                android:icon="@drawable/bookmark_select">
+            </item>
+            <item android:id="@+id/politica_privacidad"
+                android:title="Politica de Privacidad"
+                android:icon="@drawable/policy">
+            </item>
+            <item android:id="@+id/action_share"
+                android:icon="@drawable/share"
+                android:title="Compartir Aplicación"/>
+
+            <item android:id="@+id/cerrar_sesion"
+                android:title="Cerrar Sesión"
+                android:icon="@drawable/exit_to_app">
+            </item>
+        </menu>
+
+    </item>
+
+</menu>

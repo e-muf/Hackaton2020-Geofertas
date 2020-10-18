@@ -9,6 +9,7 @@ import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.TextView
 import android.widget.Toast
@@ -23,6 +24,7 @@ import kotlinx.android.synthetic.main.fragment_main.*
 class MainActivity : AppCompatActivity() {
 
     private val adapter by lazy { ViewPageAdapter(this) }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
