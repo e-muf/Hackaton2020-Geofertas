@@ -17,32 +17,49 @@ La aplicación se podrá usar sin necesidad de estar registrado para ver las ofe
 	- Términos y condiciones
 	- Vigencia
 	- Imagen
-	- Tienda que lo ofrece (BBVa)
+	- Tienda que lo ofrece (BBVA)
 
 Para las empresas aliadas que quieran mostrar sus ofertas en la aplicación necesitaremos el nombre la tienda, ubicación, logo, horario de atención.
 
 Las ofertas son personalizadas para los usuarios clientes que se dieron de alta en la aplicación, mientras que a los usuarios no clientes se los mostrará ofertas estándares, en el caso de los servicios de BBVA nos limitamos a ofrecer seguros y tarjetas de crédito mediante las promociones con los aliados (Si fueras cliente tendrías una Pantalla con 50% si pagas con tus puntos bancomer). 
 
-Las ofertas constarán de los siguientes datos:
+### Modelo relacional de BD
 
-  
-- Ofertas con los aliados: 
+![](BBVA-BD/scr1.jpeg)
 
+## Arquitectura AWS 🏛
 
-
-contará con los datos del cliente, que consiste en su nombre, apellido paterno, apellido materno. A los clientes 
-
-## Arquitectura 🏛
-
-### Arquitectura general
-
-### Arquitectura de servicios AWS
-
-
+![](arquitecture.png)
 
 ### Prototipado
 
 ![](Prototipo/src1.png)
 
 ## Capturas funcionales
+
+### iOS
+<p align="center">
+  <img src="img/sc17.png" width="150"/>
+  <img src="img/sc4.png" width="150"/>
+  <img src="img/sc5.png" width="150" />
+  <img src="img/sc10.png" width="150" />
+  <img src="img/sc9.png" width="150" />
+  <img src="img/sc6.png" width="150" />
+  <img src="img/sc8.png" width="150" />
+  <img src="img/sc7.png" width="150" />
+</p>
+
+
+
+### Android
+<p align="center">
+<img src="img/sc16.png" width="150" />
+  <img src="img/sc3.png" width="150"/>
+  <img src="img/sc2.png" width="150" />
+  <img src="img/sc1.png" width="150" />
+  <img src="img/sc13.png" width="150" />
+  <img src="img/sc14.png" width="150" />
+  <img src="img/sc12.png" width="150" />
+  <img src="img/sc19.png" width="150" />
+</p>
 
