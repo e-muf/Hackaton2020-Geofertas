@@ -47,8 +47,10 @@ class Home : Fragment() {
         val recyclerView : RecyclerView = rootView.findViewById(R.id.recycler)
         recyclerView.layoutManager = LinearLayoutManager(rootView.context, LinearLayout.VERTICAL, false )
         val ofertas = ArrayList<Ofertas>()
+        ofertas.add(Ofertas(R.drawable.auto,"Honda Aereopuerto", "Estrena un auto con este crédito preaprobado por $400,000.00", "Vigencia: 15 de noviembre", true))
+        ofertas.add(Ofertas(R.drawable.liverpool,"Liverpool", "30% de descuento en todos los departamentos", "Vigencia: 30 de octubre", false))
         for(num in 1..10)
-            ofertas.add(Ofertas(R.drawable.home1,"Liverpool", "50% de descuento el la venta nocturna", " Vigencia: num de mayo", true))
+            ofertas.add(Ofertas(R.drawable.home1,"Palacio de Hierro", "50% de descuento el la venta nocturna", " Vigencia: num de mayo", false))
         recyclerView.adapter = OfertasAdapter(ofertas)
         return rootView;
     }

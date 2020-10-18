@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.devhat.bbvaofertas.R
+import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
@@ -58,7 +59,8 @@ class Mapa : Fragment(), OnMapReadyCallback,GoogleMap.OnMarkerClickListener{
             mMap.uiSettings.isZoomGesturesEnabled = true
             mMap.setOnMarkerClickListener(this)
         }
-        mMap.addMarker(MarkerOptions().position(LatLng(17.967524, -92.940931)).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)))
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(17.967524, -92.940931),10f))
+        mMap.addMarker(MarkerOptions().position(LatLng(17.967524, -92.940931)).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)))
     }
 
 

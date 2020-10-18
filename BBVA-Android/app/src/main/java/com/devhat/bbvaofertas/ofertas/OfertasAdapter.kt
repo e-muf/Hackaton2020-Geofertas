@@ -1,5 +1,6 @@
 package com.devhat.bbvaofertas.ofertas
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.devhat.bbvaofertas.DetailOferta
 import com.devhat.bbvaofertas.R
 
 class OfertasAdapter(var list: ArrayList<Ofertas>): RecyclerView.Adapter<OfertasAdapter.ViewHolder>(){
@@ -23,10 +25,25 @@ class OfertasAdapter(var list: ArrayList<Ofertas>): RecyclerView.Adapter<Ofertas
             text_promocion.text = data.promocion
             text_vigencia.text = data.vigencia
             imgOfertas.setImageResource(data.imagen)
-            imgState.setImageResource(R.drawable.bookmark_select)
+            if(data.state){
+                imgState.setImageResource(R.drawable.bookmark_select)
+                imgState.setOnClickListener{
+                    imgState.setImageResource(R.drawable.bookmark_border)
+                }
+            }
+            else {
+                imgState.setImageResource(R.drawable.bookmark_border)
+                imgState.setOnClickListener{
+                    Toast.makeText(itemView.context, "Oferta Guardada", Toast.LENGTH_LONG).show()
+                    imgState.setImageResource(R.drawable.bookmark_select)
+                }
+            }
+
 
             itemView.setOnClickListener{
-
+                val context=itemView.context
+                val intent = Intent( context, DetailOferta::class.java)
+                context.startActivity(intent)
             }
         }
     }
